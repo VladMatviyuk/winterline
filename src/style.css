@@ -1,0 +1,30 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'PT Sans Caption', sans-serif;
+
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.container {
+    width: min(64rem,100%);
+    max-width: 64rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+hr {
+    margin: 5rem 0;
+    border: none;
+    border-top: 3px dashed darkgrey;
+}
