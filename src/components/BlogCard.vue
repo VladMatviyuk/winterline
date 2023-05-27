@@ -1,4 +1,5 @@
 <script setup>
+import UButton from "./UI/UButton.vue";
 </script>
 
 <template>
@@ -12,7 +13,7 @@
     <p class="card__date">03.06.23</p>
     <p class="card__title">Без практики, все знания летят в урну!</p>
     <p class="card__description">15 идей для прокачки скилов и закрепления своих знаний.</p>
-    <button class="card__btn">>>></button>
+    <UButton style="width: 70px">>>></UButton>
   </div>
 </template>
 
@@ -73,24 +74,5 @@
 .card__description {
   margin-top: 1rem;
   font-size: .9rem ;
-}
-
-.card__btn {
-  margin-top: 2rem;
-  width: 70px;
-  border: 2px dotted darkgrey;
-  color: darkgrey;
-  background: transparent;
-  font-size: 1rem;
-  padding: .5rem;
-  cursor: pointer;
-  transition: all .1s ease-in-out;
-}
-
-.card__btn:hover {
-  color: black;
-  border: 2px dotted black;
-  box-shadow: 2px 2px 0px black;
-  transition: all .1s ease-in-out;
 }
 </style>

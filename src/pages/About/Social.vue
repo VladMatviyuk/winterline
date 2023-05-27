@@ -1,25 +1,37 @@
 <script setup>
+import UIcon from "../../components/UI/UIcon.vue";
+
+const socials = [
+  {
+    name: 'telegram_icon',
+    alt: 'telegram',
+    width: '48',
+    link: ''
+  },
+  {
+    name: 'github_icon',
+    alt: 'github',
+    width: '48',
+    link: ''
+  },
+  {
+    name: 'codepen_icon',
+    alt: 'codepen',
+    width: '48',
+    link: ''
+  }
+]
 </script>
 
 <template>
   <section class="contacts">
     <span class="title">Social</span>
     <div class="contacts__container">
-      <div>Иногда бываю и тут: </div>
+      <div>Также я: </div>
       <ul class="contacts__list">
-        <li class="contacts__item">
-          <a href="#">
-            <img alt="telegram" class="icon" src="../../assets/social/telegram_icon.svg" width="48px">
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="#">
-            <img alt="github" class="icon" src="../../assets/social/github_icon.svg" width="48px">
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="#">
-            <img alt="codepen" class="icon" src="../../assets/social/codepen_icon.svg" width="48px">
+        <li class="contacts__item" v-for="social in socials">
+          <a :href="social.link">
+            <UIcon :name="social.name" :alt="social.alt" :width="social.width"/>
           </a>
         </li>
       </ul>
@@ -31,6 +43,7 @@
 .contacts__container {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .contacts__list {

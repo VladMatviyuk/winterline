@@ -4,6 +4,7 @@ import Social from '../pages/About/Social.vue';
 import Stack from '../pages/About/Stack.vue';
 import LastBlog from '../pages/About/LastBlog.vue';
 import BlogCard from "./BlogCard.vue";
+import UButton from './UI/UButton.vue'
 
 const components = [
     {name: 'Header', component: Header},
@@ -12,6 +13,7 @@ const components = [
     {name: 'Stack', component: Stack},
     {name: 'LastBlog', component: LastBlog},
     {name: 'BlogCard', component: BlogCard},
+    {name: 'UButton', component: UButton},
 ]
 export default  {
     install(app){

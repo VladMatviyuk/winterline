@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import UButton from "../../components/UI/UButton.vue";
 
 const showHistory = ref(false);
 </script>
@@ -24,11 +25,9 @@ const showHistory = ref(false);
       </div>
     </div>
 
-    <button
-        class="stack__btn"
-        @click="showHistory = !showHistory">
+    <UButton @click="showHistory = !showHistory">
       Немного подробнее
-    </button>
+    </UButton>
 
     <div v-if="showHistory" class="stack__history">
       <div class="stack__history-element">
@@ -86,20 +85,5 @@ const showHistory = ref(false);
   margin: 3rem 0;
 }
 
-.stack__btn {
-  border: 2px dotted darkgrey;
-  color: darkgrey;
-  background: transparent;
-  font-size: 1rem;
-  padding: .5rem;
-  cursor: pointer;
-  transition: all .1s ease-in-out;
-}
 
-.stack__btn:hover {
-  color: black;
-  border: 2px dotted black;
-  box-shadow: 2px 2px 0px black;
-  transition: all .1s ease-in-out;
-}
 </style>

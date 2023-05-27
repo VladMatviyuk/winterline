@@ -5,7 +5,9 @@
 <template>
   <header class="presentation__head">
     <div class="presentation__image">
-      <img src="../../assets/main.png">
+      <div class="title">Vlad</div>
+      <div class="title">Matviuyk</div>
+<!--      <img src="../../assets/main.png">-->
     </div>
     <ul class="presentation__list">
       <li class="presentation__list-item-1">Web-разработчик</li>
@@ -41,20 +43,24 @@
 .presentation__list-item-3 {
   animation: 1.8s cubic-bezier(.68,-.55,.585,1.65) forwards fade-in;
 }
+.presentation__image {
+  animation: 1.8s cubic-bezier(.68,-.55,.585,1.65) forwards fade-out;
+}
 
 .presentation__image img {
   border: .3rem solid darkgrey;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%);
-  transition: all .3s ease-in-out;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .presentation__image img:hover {
-  //box-shadow: 8px 0px 0px black;
-  transition: all .3s ease-in-out;
+  box-shadow: 0px 0px 10px black;
+  transition: all .2s ease-in-out;
 }
 
 @keyframes fade-in {
@@ -66,6 +72,18 @@
   to {
     opacity: 1;
     transform: translateY(1rem)
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
   }
 }
 </style>

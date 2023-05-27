@@ -5,23 +5,18 @@
   <header>
       <div class="title">
         WinterLine
+<!--                JR.Matviuyk-->
       </div>
     <nav>
       <ul>
         <li>
-          <router-link to="/">
-            о мне
-          </router-link>
+          <router-link to="/">обо мне</router-link>
         </li>
         <li>
-          <router-link to="blog">
-          блог
-          </router-link>
+          <router-link to="blog">блог</router-link>
         </li>
         <li>
-          <router-link to="demo">
-            проекты
-          </router-link>
+          <router-link to="demo">демо</router-link>
         </li>
       </ul>
     </nav>
